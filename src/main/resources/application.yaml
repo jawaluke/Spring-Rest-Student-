@@ -1,0 +1,16 @@
+spring:
+  h2:
+    console:
+      enabled: 'true'
+  datasource:
+    username: sa
+    initialization-mode: always
+    url: jdbc:h2:mem:StudentH2Sample
+    platform: h2
+    password: password
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: create
+server:
+  port: '8082'
