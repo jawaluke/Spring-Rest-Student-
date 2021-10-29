@@ -9,7 +9,7 @@ import javax.validation.constraints.NotBlank;
 public class Student {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private int studentId;
 
     @NotBlank(message = "Please Add Student Name")
